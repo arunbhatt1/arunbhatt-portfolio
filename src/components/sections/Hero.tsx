@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
               </h1>
 
               <p className="text-lg sm:text-xl font-medium text-slate-300 max-w-2xl leading-relaxed">
-                7th sem computer engineering student.
+                8th sem computer engineering student.
               </p>
             </div>
 
@@ -136,7 +136,7 @@ export const Hero: React.FC = () => {
                 <div className="absolute bottom-5 left-5 right-5 p-3.5 rounded-xl bg-[#0d0e12]/90 backdrop-blur-xl border border-white/10 flex items-center justify-between text-xs font-mono">
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-spider-red animate-pulse" />
-                    <span className="text-slate-200 font-semibold">7th Sem BCT</span>
+                    <span className="text-slate-200 font-semibold">8th Sem BCT</span>
                   </div>
                   <span className="text-spider-blue font-bold">SEC Lalitpur</span>
                 </div>

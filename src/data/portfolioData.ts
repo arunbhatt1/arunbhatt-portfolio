@@ -3,7 +3,7 @@ import { Project, SkillCategory, EducationItem, ExperienceItem } from '../types'
 export const personalInfo = {
   name: "Arun Bhatt",
   headline: "Computer Engineering Student & Developer",
-  subheadline: "7th-Semester Computer Engineering Student at Sagarmatha Engineering College (SEC)",
+  subheadline: "8th-Semester Computer Engineering Student at Sagarmatha Engineering College (SEC)",
   summary: "Computer Engineering undergraduate with practical experience across cross-platform mobile development (Flutter/Firebase), backend RESTful APIs (Node.js/Express with JWT authentication), and systems programming in C and C++. Demonstrates strong foundations in Data Structures & Algorithms, Object-Oriented Design, and Software Architecture, backed by 3 consecutive terms as elected Class Representative.",
   location: "Kathmandu / Lalitpur, Nepal",
   email: "arunbhattjb@gmail.com",
@@ -15,11 +15,11 @@ export const personalInfo = {
   domain: "arunbhatt.com.np",
   avatarUrl: "/me.png",
   openToWork: true,
-  statusBadge: "7th Sem BCT • Open to Opportunities",
+  statusBadge: "8th Sem BCT • Open to Opportunities",
 };
 
 export const heroStats = [
-  { label: "Engineering Semester", value: "7th Sem" },
+  { label: "Engineering Semester", value: "8th Sem" },
   { label: "Core Projects", value: "4+" },
   { label: "Leadership Terms", value: "3 Semesters (CR)" },
   { label: "Core Stacks", value: "Flutter • Node • C++" }
@@ -256,9 +256,9 @@ export const educationData: EducationItem[] = [
   {
     institution: "Sagarmatha Engineering College (SEC)",
     degree: "Bachelor of Engineering in Computer Engineering (BCT)",
-    period: "Expected Mid-2027 (Currently 7th Semester)",
+    period: "Expected Mid-2027 (Currently 8th Semester)",
     location: "Sanepa, Lalitpur, Nepal",
-    status: "Currently in 7th Semester",
+    status: "Currently in 8th Semester",
     details: [
       "Affiliated with Tribhuvan University (IOE curriculum).",
       "Key coursework: Data Structures & Algorithms, Object-Oriented Analysis & Design, Database Management Systems, Computer Networks, Operating Systems, Software Engineering, Digital Logic, Automata Theory."
@@ -326,7 +326,7 @@ export const codeSnippet = {
   fileName: "developer_profile.json",
   content: `{
   "name": "Arun Bhatt",
-  "education": "B.E. Computer Engineering (7th Sem)",
+  "education": "B.E. Computer Engineering (8th Sem)",
   "institution": "Sagarmatha Engineering College",
   "location": "Kathmandu / Lalitpur, Nepal",
   "roles": ["Full-Stack Mobile Dev", "Backend REST Dev", "Systems & C++"],

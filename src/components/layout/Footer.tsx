@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-slate-300 text-xs sm:text-sm max-w-md leading-relaxed">
-              7th-semester Computer Engineering student at Sagarmatha Engineering College (SEC). Passionate about full-stack mobile development, RESTful APIs, and systems engineering.
+              8th-semester Computer Engineering student at Sagarmatha Engineering College (SEC). Passionate about full-stack mobile development, RESTful APIs, and systems engineering.
             </p>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-spider-red/10 border border-spider-red/30 text-spider-red text-xs font-mono font-semibold">
               <span className="w-2 h-2 rounded-full bg-spider-red animate-pulse" />

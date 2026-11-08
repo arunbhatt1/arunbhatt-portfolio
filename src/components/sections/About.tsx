@@ -23,12 +23,12 @@ export const About: React.FC = () => {
                   <span>Engineering Background</span>
                 </h3>
                 <span className="text-xs font-mono px-3 py-1 rounded-full bg-spider-blue/10 border border-spider-blue/30 text-spider-blue font-semibold">
-                  7th Sem BCT
+                  8th Sem BCT
                 </span>
               </div>
               
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                I am a 7th-semester <strong className="text-white">Computer Engineering (BCT)</strong> student at <strong className="text-white">Sagarmatha Engineering College (SEC)</strong>, affiliated with Tribhuvan University (IOE). My practical expertise spans building cross-platform mobile apps with <strong className="text-spider-red">Flutter & Firebase</strong>, engineering JWT-authenticated RESTful backends with <strong className="text-spider-blue">Node.js & Express</strong>, and mastering lower-level systems & algorithms in <strong className="text-slate-100">C and C++</strong>.
+                I am an 8th-semester <strong className="text-white">Computer Engineering (BCT)</strong> student at <strong className="text-white">Sagarmatha Engineering College (SEC)</strong>, affiliated with Tribhuvan University (IOE). My practical expertise spans building cross-platform mobile apps with <strong className="text-spider-red">Flutter & Firebase</strong>, engineering JWT-authenticated RESTful backends with <strong className="text-spider-blue">Node.js & Express</strong>, and mastering lower-level systems & algorithms in <strong className="text-slate-100">C and C++</strong>.
               </p>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
