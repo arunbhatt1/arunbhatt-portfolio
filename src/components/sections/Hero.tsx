@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
               <span className="text-white/20">•</span>
               <div className="flex items-center gap-1.5 text-spider-blue font-semibold">
                 <Sparkles className="w-4 h-4" />
-                <span>3x Elected Class Representative</span>
+                <span>4x Elected Class Representative</span>
               </div>
             </div>
 

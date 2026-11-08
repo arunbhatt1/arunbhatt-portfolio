@@ -32,7 +32,7 @@ export const About: React.FC = () => {
               </p>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Beyond coding, I emphasize software architecture, UML/DFD modeling, and engineering documentation on Overleaf. I have been democratically elected as <strong className="text-spider-red">Class Representative (CR)</strong> for three consecutive terms, bridging students and faculty administration.
+                Beyond coding, I emphasize software architecture, UML/DFD modeling, and engineering documentation on Overleaf. I have been democratically elected as <strong className="text-spider-red">Class Representative (CR)</strong> for four consecutive terms, bridging students and faculty administration.
               </p>
 
               {/* Core Strengths Checklist */}

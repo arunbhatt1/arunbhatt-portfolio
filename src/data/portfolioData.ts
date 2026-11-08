@@ -4,7 +4,7 @@ export const personalInfo = {
   name: "Arun Bhatt",
   headline: "Computer Engineering Student & Developer",
   subheadline: "8th-Semester Computer Engineering Student at Sagarmatha Engineering College (SEC)",
-  summary: "Computer Engineering undergraduate with practical experience across cross-platform mobile development (Flutter/Firebase), backend RESTful APIs (Node.js/Express with JWT authentication), and systems programming in C and C++. Demonstrates strong foundations in Data Structures & Algorithms, Object-Oriented Design, and Software Architecture, backed by 3 consecutive terms as elected Class Representative.",
+  summary: "Computer Engineering undergraduate with practical experience across cross-platform mobile development (Flutter/Firebase), backend RESTful APIs (Node.js/Express with JWT authentication), and systems programming in C and C++. Demonstrates strong foundations in Data Structures & Algorithms, Object-Oriented Design, and Software Architecture, backed by 4 consecutive terms as elected Class Representative.",
   location: "Kathmandu / Lalitpur, Nepal",
   email: "arunbhattjb@gmail.com",
   phone: "+977 9860313523",
@@ -21,7 +21,7 @@ export const personalInfo = {
 export const heroStats = [
   { label: "Engineering Semester", value: "8th Sem" },
   { label: "Core Projects", value: "4+" },
-  { label: "Leadership Terms", value: "3 Semesters (CR)" },
+  { label: "Leadership Terms", value: "4 Semesters (CR)" },
   { label: "Core Stacks", value: "Flutter • Node • C++" }
 ];
 
@@ -231,10 +231,10 @@ export const experienceData: ExperienceItem[] = [
     organization: "Sagarmatha Engineering College (SEC)",
     department: "Department of Electronics & Computer Engineering (BCT)",
     role: "Class Representative (CR)",
-    period: "5th Sem – Present (3 Consecutive Semesters)",
+    period: "5th Sem – Present (4 Consecutive Semesters)",
     location: "Sanepa, Lalitpur",
     highlights: [
-      "Democratically elected and consistently re-confirmed as Class Representative across 5th, 6th, and 7th semesters.",
+      "Democratically elected and consistently re-confirmed as Class Representative across 5th, 6th, 7th, and 8th semesters.",
       "Acted as the official liaison between the student body and faculty / department administration to resolve academic, lab, and scheduling matters.",
       "Organized student review sessions, project presentation timetables, and coordinated cross-team coursework deliverables."
     ]
@@ -335,7 +335,7 @@ export const codeSnippet = {
     "backend": ["Node.js", "Express.js", "JWT"],
     "systems": ["C", "C++", "DSA", "OOP"]
   },
-  "leadership": "3x Elected Class Representative (5th, 6th, 7th Sem)",
+  "leadership": "4x Elected Class Representative (5th, 6th, 7th, 8th Sem)",
   "status": "Available for Opportunities",
   "domain": "arunbhatt.com.np"
 }`

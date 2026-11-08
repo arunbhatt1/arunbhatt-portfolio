@@ -63,14 +63,14 @@ export const Projects: React.FC = () => {
         {/* Footnote about repository links */}
         <div className="mt-14 p-5 rounded-3xl glass-card flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-300">
           <div className="flex items-center gap-2.5">
-            <FolderGit2 className="w-5 h-5 text-spider-red" />
-            <span>All repository links point directly to Arun Bhatt's GitHub profile.</span>
+            <FolderGit2 className="w-5 h-5 text-spider-red shrink-0" />
+            <span>Explore the repositories for these projects and many more on my GitHub profile.</span>
           </div>
           <a
             href="https://github.com/arunbhatt1"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-spider-red hover:text-spider-redGlow font-bold flex items-center gap-1"
+            className="text-spider-red hover:text-spider-redGlow font-bold flex items-center gap-1 shrink-0"
           >
             Browse github.com/arunbhatt1 &rarr;
           </a>
