@@ -1,168 +1,111 @@
 import React from 'react';
-import { personalInfo, heroStats } from '../../data/portfolioData';
-import { Github, Linkedin, Mail, FileDown, ArrowRight, MapPin, Sparkles } from 'lucide-react';
+import { personalInfo } from '../../data/portfolioData';
+import { Github, Linkedin, Mail, FileDown, ArrowRight, MapPin } from 'lucide-react';
+
+const facts = [
+  { label: 'Studying', value: 'B.E. Computer Engineering, 8th semester' },
+  { label: 'Builds with', value: 'Flutter, Node.js, C++' },
+  { label: 'Leads', value: 'Class Representative for 4 straight semesters' },
+];
 
 export const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-[95vh] pt-32 pb-20 md:pt-40 md:pb-28 flex items-center overflow-hidden">
-      {/* Background Radial Glows */}
-      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-spider-red/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow" />
-      <div className="absolute top-1/3 right-1/4 w-[450px] h-[450px] bg-spider-blue/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow" />
-
+    <section id="home" className="relative min-h-[92vh] pt-32 pb-20 md:pt-40 md:pb-28 flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
-          {/* Left Column: Headline, Subtext, CTAs */}
-          <div className="lg:col-span-7 space-y-7 text-left">
-            
-            {/* Status / Availability Badge */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#14161f] border border-white/10 shadow-lg text-xs font-mono">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-spider-red opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-spider-red"></span>
-              </span>
-              <span className="text-slate-200 font-semibold">{personalInfo.statusBadge}</span>
-            </div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          <div className="lg:col-span-7 space-y-8 text-left">
+            <p className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#14161f] border border-white/10 text-sm text-slate-200">
+              <span className="h-2 w-2 rounded-full bg-spider-red" aria-hidden="true" />
+              {personalInfo.statusBadge}
+            </p>
 
-            {/* Display Title with Cursive Accent */}
-            <div className="space-y-3">
-              <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-100 tracking-tight leading-[1.1]">
-                HELLO, I'M{' '}
-                <span className="font-cursive text-spider-red text-6xl sm:text-7xl lg:text-8xl font-normal inline-block transform -rotate-2 hover:rotate-0 transition-transform">
-                  Arun
-                </span>
-                <br />
-                <span className="text-gradient-spider">COMPUTER</span>{' '}
-                <span className="font-cursive text-spider-blue text-5xl sm:text-6xl lg:text-7xl font-normal lowercase tracking-normal">
-                  engineer
-                </span>
+            <div className="space-y-5">
+              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-50 tracking-tight leading-[1.05] text-balance">
+                Arun Bhatt
               </h1>
-
-              <p className="text-lg sm:text-xl font-medium text-slate-300 max-w-2xl leading-relaxed">
-                8th sem computer engineering student.
+              <p className="text-xl sm:text-2xl text-slate-300 max-w-[34ch] leading-snug text-balance">
+                I build mobile apps, REST backends and C++ systems.
               </p>
             </div>
 
-            {/* Meta Location & Leadership Badge */}
-            <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-400 font-mono">
-              <div className="flex items-center gap-1.5 text-slate-300">
-                <MapPin className="w-4 h-4 text-spider-red" />
-                <span>{personalInfo.location}</span>
+            <dl className="space-y-2.5 text-sm sm:text-base max-w-xl">
+              {facts.map((f) => (
+                <div key={f.label} className="flex gap-4 border-t border-white/10 pt-2.5">
+                  <dt className="w-24 shrink-0 text-slate-400">{f.label}</dt>
+                  <dd className="text-slate-200">{f.value}</dd>
+                </div>
+              ))}
+              <div className="flex gap-4 border-t border-white/10 pt-2.5">
+                <dt className="w-24 shrink-0 text-slate-400">Based in</dt>
+                <dd className="text-slate-200 flex items-center gap-1.5">
+                  <MapPin className="w-4 h-4 text-spider-red" aria-hidden="true" />
+                  {personalInfo.location}
+                </dd>
               </div>
-              <span className="text-white/20">•</span>
-              <div className="flex items-center gap-1.5 text-spider-blue font-semibold">
-                <Sparkles className="w-4 h-4" />
-                <span>4x Elected Class Representative</span>
-              </div>
-            </div>
+            </dl>
 
-            {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-3 pt-2">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider bg-spider-red text-white hover:bg-spider-redGlow transition-all duration-200 shadow-lg shadow-spider-red/30 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-spider-red text-white hover:bg-spider-redGlow transition-colors duration-200"
               >
-                <span>Explore Projects</span>
-                <ArrowRight className="w-4 h-4" />
+                View projects
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </a>
-
               <a
                 href={personalInfo.resumePath}
                 download="Arun_Bhatt_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider bg-[#14161f] border border-white/15 text-slate-200 hover:border-spider-red/50 hover:bg-white/5 transition-all duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-[#14161f] border border-white/15 text-slate-100 hover:border-spider-red/60 transition-colors duration-200"
               >
-                <FileDown className="w-4 h-4 text-spider-red" />
-                <span>Resume PDF</span>
+                <FileDown className="w-4 h-4 text-spider-red" aria-hidden="true" />
+                Download resume
               </a>
-
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full font-semibold text-xs uppercase tracking-wider text-slate-400 hover:text-white transition-all"
+                className="inline-flex items-center gap-2 px-4 py-3 rounded-full font-medium text-sm text-slate-300 hover:text-white transition-colors"
               >
-                <Mail className="w-4 h-4 text-spider-blue" />
-                <span>Get In Touch</span>
+                Contact me
               </a>
             </div>
 
-            {/* Social Links */}
-            <div className="flex items-center gap-4 pt-6 border-t border-white/10">
-              <span className="text-xs font-mono text-slate-400 uppercase tracking-widest">Profiles:</span>
-              <a
-                href={personalInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-[#14161f] border border-white/10 text-slate-300 hover:text-white hover:border-spider-red/50 hover:bg-spider-red/10 transition-all shadow-md"
-                aria-label="GitHub Profile"
-              >
-                <Github className="w-4.5 h-4.5" />
-              </a>
-              <a
-                href={personalInfo.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-[#14161f] border border-white/10 text-slate-300 hover:text-white hover:border-spider-blue/50 hover:bg-spider-blue/10 transition-all shadow-md"
-                aria-label="LinkedIn Profile"
-              >
-                <Linkedin className="w-4.5 h-4.5" />
-              </a>
-              <a
-                href={`mailto:${personalInfo.email}`}
-                className="p-3 rounded-xl bg-[#14161f] border border-white/10 text-slate-300 hover:text-white hover:border-spider-red/50 hover:bg-spider-red/10 transition-all shadow-md"
-                aria-label="Send Email"
-              >
-                <Mail className="w-4.5 h-4.5" />
-              </a>
+            <div className="flex items-center gap-3">
+              {[
+                { href: personalInfo.github, label: 'GitHub profile', Icon: Github, ext: true },
+                { href: personalInfo.linkedin, label: 'LinkedIn profile', Icon: Linkedin, ext: true },
+                { href: `mailto:${personalInfo.email}`, label: 'Email Arun', Icon: Mail, ext: false },
+              ].map(({ href, label, Icon, ext }) => (
+                <a
+                  key={label}
+                  href={href}
+                  {...(ext ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  className="p-3 rounded-xl bg-[#14161f] border border-white/10 text-slate-300 hover:text-white hover:border-spider-red/50 transition-colors"
+                  aria-label={label}
+                >
+                  <Icon className="w-5 h-5" aria-hidden="true" />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Right Column: Profile Photo Frame */}
-          <div className="lg:col-span-5 flex flex-col items-center lg:items-end">
-            
-            {/* Profile Photo Frame with Spider Web Accent Border */}
-            <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-spider-red via-spider-blue to-spider-red rounded-3xl blur-xl opacity-40 group-hover:opacity-80 transition duration-500" />
-              
-              <div className="relative rounded-3xl bg-[#14161f] border border-white/15 p-2.5 overflow-hidden max-w-[280px] sm:max-w-[340px] shadow-2xl">
-                <img
-                  src={personalInfo.avatarUrl}
-                  alt="Arun Bhatt - Computer Engineering Student"
-                  className="w-full h-[340px] sm:h-[400px] object-cover object-top rounded-2xl transition-transform duration-500 group-hover:scale-105"
-                  loading="eager"
-                />
-                
-                {/* Photo Badge Overlay */}
-                <div className="absolute bottom-5 left-5 right-5 p-3.5 rounded-xl bg-[#0d0e12]/90 backdrop-blur-xl border border-white/10 flex items-center justify-between text-xs font-mono">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-spider-red animate-pulse" />
-                    <span className="text-slate-200 font-semibold">8th Sem BCT</span>
-                  </div>
-                  <span className="text-spider-blue font-bold">SEC Lalitpur</span>
-                </div>
-              </div>
-            </div>
-
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <figure className="rounded-3xl bg-[#14161f] border border-white/15 p-2.5 max-w-[300px] sm:max-w-[360px] shadow-[0_24px_48px_-24px_rgba(0,0,0,0.8)]">
+              <img
+                src={personalInfo.avatarUrl}
+                alt="Arun Bhatt"
+                width={340}
+                height={400}
+                className="w-full h-[340px] sm:h-[400px] object-cover object-top rounded-2xl"
+                loading="eager"
+                decoding="async"
+              />
+              <figcaption className="px-3 py-3 flex items-center justify-between text-sm">
+                <span className="text-slate-200">8th semester, BCT</span>
+                <span className="text-slate-400">Sagarmatha Engineering College</span>
+              </figcaption>
+            </figure>
           </div>
-
         </div>
-
-        {/* Stats Grid Bar */}
-        <div className="mt-16 pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-          {heroStats.map((stat, i) => (
-            <div key={i} className="glass-card glass-card-hover p-5 rounded-2xl text-center md:text-left">
-              <div className="text-[11px] font-mono text-slate-400 mb-1 uppercase tracking-wider">
-                {stat.label}
-              </div>
-              <div className="text-lg sm:text-xl font-extrabold text-white">
-                {stat.value}
-              </div>
-            </div>
-          ))}
-        </div>
-
       </div>
     </section>
   );
 };
-

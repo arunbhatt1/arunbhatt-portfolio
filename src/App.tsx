@@ -12,7 +12,7 @@ import { SpiderWebRope } from './components/ui/SpiderWebRope';
 
 export const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#0d0e12] text-slate-100 selection:bg-spider-red/20 selection:text-spider-red relative spider-web-bg">
+    <div className="min-h-screen bg-[#0d0e12] text-slate-100 selection:bg-spider-red/20 selection:text-spider-red relative">
       {/* Spider-Man Web Rope Scroll Progress Tracker */}
       <SpiderWebRope />
 
