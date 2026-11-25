@@ -136,7 +136,7 @@ export const projects: Project[] = [
       "LaTeX / Overleaf"
     ],
     featured: true,
-    githubUrl: "https://github.com/arunbhatt1",
+    githubUrl: "https://github.com/arunbhatt1/Medication-Adherence-App",
     architectureHighlights: [
       "Role-Based Access: Supervisor, Doctor, Nurse, Patient",
       "Push Notifications via FCM & cron scheduler",
@@ -163,7 +163,7 @@ export const projects: Project[] = [
       "Collision Algorithms"
     ],
     featured: true,
-    githubUrl: "https://github.com/arunbhatt1",
+    githubUrl: "https://github.com/arunbhatt1/Snake-game-using-graphics.h",
     architectureHighlights: [
       "Custom game loop & rendering pipeline",
       "Coordinate collision boundary detection",
@@ -172,29 +172,28 @@ export const projects: Project[] = [
   },
   {
     id: "task-scheduler-cpp",
-    title: "Task Scheduler Application",
+    title: "To-Do List Application",
     category: "DSA & Algorithms",
     role: "Coursework Project Developer",
     year: "2023",
-    shortDescription: "High-performance event scheduling system using min/max priority queues (heaps) and linked lists to resolve temporal scheduling conflicts.",
+    shortDescription: "Console to-do list in C++ built on a singly linked list, with add, remove, complete and list operations.",
     fullDescription: [
-      "Designed and implemented an event scheduling engine in C++ as part of Data Structures & Algorithms coursework.",
-      "Utilized priority queues and linked list structures to efficiently sort, prioritize, and dispatch tasks according to scheduled deadlines.",
-      "Implemented algorithmic conflict resolution routines to detect and manage overlapping schedules and resource bottlenecks."
+      "Built a console task manager in C++ for Data Structures & Algorithms coursework.",
+      "Stored tasks as nodes in a singly linked list with unique IDs, appending new tasks and unlinking removed ones by pointer.",
+      "Wrapped the list in a ToDoList class that tracks completion status for each task."
     ],
     technologies: [
       "C++",
       "Data Structures (DSA)",
-      "Priority Queues / Heaps",
       "Linked Lists",
-      "Conflict Resolution"
+      "OOP"
     ],
     featured: false,
-    githubUrl: "https://github.com/arunbhatt1",
+    githubUrl: "https://github.com/arunbhatt1/DSA-Project",
     architectureHighlights: [
-      "Heap-based priority dispatching",
-      "O(log n) task insertion & extraction",
-      "Algorithmic conflict detection"
+      "Singly linked list of task nodes",
+      "Unique task IDs and completion state",
+      "ToDoList class encapsulating list operations"
     ]
   },
   {
@@ -217,7 +216,6 @@ export const projects: Project[] = [
       "Console UI"
     ],
     featured: false,
-    githubUrl: "https://github.com/arunbhatt1",
     architectureHighlights: [
       "Polymorphic question dispatch",
       "Encapsulated player scoring state",
@@ -292,32 +290,36 @@ export const githubProfile = {
   bio: "Computer Engineering Student @ Sagarmatha Engineering College | Flutter, Node.js, C++",
   pinnedRepositories: [
     {
-      name: "Medication-Adherence-System",
-      description: "Cloud-Based Medication Adherence Monitoring App with Flutter, Firebase, Node.js REST API & Groq AI clinical chatbot.",
+      name: "Medication-Adherence-App",
+      url: "https://github.com/arunbhatt1/Medication-Adherence-App",
+      description: "Flutter app that helps users track medication schedules and stay on their dosage routine.",
       language: "Dart",
       stars: "Minor Project",
-      topics: ["flutter", "firebase", "nodejs", "jwt-auth", "groq-api"]
+      topics: ["flutter", "firebase", "healthcare"]
     },
     {
-      name: "Snake-Game-CPP",
-      description: "Graphical Snake game implementing game loop, collision detection, and score tracking with graphics.h in C++.",
+      name: "password-strength-analyzer",
+      url: "https://github.com/arunbhatt1/password-strength-analyzer",
+      description: "Python tool that scores password strength and explains what makes it weak.",
+      language: "Python",
+      stars: "Security tool",
+      topics: ["python", "security", "cli"]
+    },
+    {
+      name: "image-metadata-viewer",
+      url: "https://github.com/arunbhatt1/image-metadata-viewer",
+      description: "Offline desktop tool for inspecting image EXIF, color data, and batch stats. Read-only, no uploads.",
+      language: "Python",
+      stars: "Desktop tool",
+      topics: ["python", "exif", "offline"]
+    },
+    {
+      name: "Snake-game-using-graphics.h",
+      url: "https://github.com/arunbhatt1/Snake-game-using-graphics.h",
+      description: "Graphical Snake game in C++ with graphics.h: game loop, collision detection, and score tracking.",
       language: "C++",
       stars: "Computer Graphics",
-      topics: ["cpp", "graphics-h", "game-loop", "algorithms"]
-    },
-    {
-      name: "DSA-Task-Scheduler",
-      description: "Conflict-resolving task scheduling engine utilizing min/max priority queues and linked lists.",
-      language: "C++",
-      stars: "DSA Coursework",
-      topics: ["cpp", "dsa", "priority-queue", "heaps"]
-    },
-    {
-      name: "OOP-Quiz-System",
-      description: "Console-based interactive quiz engine applying OOP principles (encapsulation, inheritance, polymorphism).",
-      language: "C++",
-      stars: "OOP Coursework",
-      topics: ["cpp", "oop", "polymorphism", "console-app"]
+      topics: ["cpp", "graphics-h", "game-loop"]
     }
   ]
 };
