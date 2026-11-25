@@ -49,7 +49,7 @@ export const GitHubSection: React.FC = () => {
           {githubProfile.pinnedRepositories.map((repo, index) => (
             <a
               key={index}
-              href={githubProfile.url}
+              href={repo.url}
               target="_blank"
               rel="noopener noreferrer"
               className="glass-card glass-card-hover p-6 sm:p-7 rounded-3xl flex flex-col justify-between group"
